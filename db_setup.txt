@@ -1,0 +1,4 @@
+CREATE ROLE todoapp_user WITH LOGIN PASSWORD 'letmepass';
+ALTER ROLE todoapp_user CREATEDB;
+CREATE DATABASE tododb
+GRANT ALL PRIVILEGES ON DATABASE tododb to todoapp_user
